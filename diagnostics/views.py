@@ -74,8 +74,6 @@ def signup(request):
         form = RegistrationForm(request.POST)
         if form.is_valid():
             user = form.save()
-            print(f"🔍 LOGIN DEBUG: User '{user.username}' authenticated. is_staff={user.is_staff}, is_active={user.is_active}")
-            user = form.save()
             login(request, user)
             messages.success(request, 'Your account has been created successfully.')
             return redirect('dashboard')
@@ -88,8 +86,7 @@ def user_login(request):
     if request.method == 'POST':
         form = AuthenticationForm(request, data=request.POST)
         if form.is_valid():
-            user = form.save()
-            print(f"🔍 LOGIN DEBUG: User '{user.username}' authenticated. is_staff={user.is_staff}, is_active={user.is_active}")
+            user = form.get_user()
             login(request, user)
             # Unified Authentication: Redirect managers to management dashboard, others to normal dashboard
             if user.is_staff:
@@ -454,6 +451,7 @@ def manager_user_case_delete(request, case_id):
     case.delete()
     messages.success(request, 'User case deleted successfully.')
     return redirect('manager_user_cases')
+
 
 
 
