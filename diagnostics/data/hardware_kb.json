@@ -1,0 +1,264 @@
+{
+  "diagnostics": [
+    {
+      "id": "HD001",
+      "component": "CPU",
+      "issue": "Processor Overload",
+      "threshold": 85,
+      "recommendation": "High CPU utilization detected. Please close intensive background applications to lower system load."
+    },
+    {
+      "id": "HD002",
+      "component": "Cooling/Fans",
+      "issue": "Critical Thermal Limit",
+      "threshold": 95,
+      "recommendation": "The processor is approaching its maximum safe operating temperature. Initiating emergency thermal throttling."
+    },
+    {
+      "id": "HD003",
+      "component": "Power Supply",
+      "issue": "Voltage Rail Fluctuation",
+      "threshold": 5,
+      "recommendation": "Voltage rail deviation exceeds the safe +/- 5% threshold. Inspect power delivery components immediately."
+    }
+  ],
+  "nodes": {
+    "start": {
+      "type": "question",
+      "text": "What is the primary symptom your computer is experiencing?",
+      "options": [
+        { "text": "System is running very slow", "next": "check_slowness_type" },
+        { "text": "No display or boot failure", "next": "check_post_logic" },
+        { "text": "Unexpected restarts or shutdowns", "next": "check_power_context" },
+        { "text": "Strange noises or physical vibrations", "next": "check_noise_type" },
+        { "text": "Laptop specific battery or power issues", "next": "check_laptop_battery" },
+        { "text": "Unresponsive ports or input peripherals", "next": "check_peripheral_port" },
+        { "text": "Network dropping or connectivity loss", "next": "check_network_fault" }
+      ]
+    },
+    "check_slowness_type": {
+      "type": "question",
+      "text": "Does the performance slowness persist when the computer is booted into Safe Mode?",
+      "options": [
+        { "text": "Yes, it is slow everywhere", "next": "check_hardware_bottleneck_type" },
+        { "text": "No, it runs fast in Safe Mode", "next": "sol_software_bloat" }
+      ]
+    },
+    "check_hardware_bottleneck_type": {
+      "type": "question",
+      "text": "Are you encountering frequent or recurring Blue Screen of Death (BSOD) errors during normal operation?",
+      "options": [
+        { "text": "Yes, frequent BSODs occur randomly", "next": "sol_ram_defect_isolation" },
+        { "text": "No, but applications crash and files load slowly", "next": "sol_ssd_wearout" }
+      ]
+    },
+    "check_post_logic": {
+      "type": "question",
+      "text": "What happens immediately after you press the physical power button?",
+      "options": [
+        { "text": "No lights, no fans, no sound", "next": "sol_power_delivery_failure" },
+        { "text": "Lights/Fans turn on, but screen remains completely black", "next": "check_beep_codes" },
+        { "text": "Error message displays: 'No Bootable Device Found'", "next": "sol_storage_physical_failure" }
+      ]
+    },
+    "check_beep_codes": {
+      "type": "question",
+      "text": "Does the motherboard emit distinct audio beep patterns or display a solid debug LED indicator?",
+      "options": [
+        { "text": "1 long, 2 short beeps", "next": "sol_gpu_init_failure" },
+        { "text": "Continuous short beeps", "next": "sol_ram_communication_error" },
+        { "text": "No beeps at all, but power remains constant", "next": "sol_post_stall_motherboard" },
+        { "text": "Solid red CPU debug indicator on the board", "next": "sol_cpu_socket_dead" }
+      ]
+    },
+    "check_power_context": {
+      "type": "question",
+      "text": "When exactly does the unexpected system shutdown occur?",
+      "options": [
+        { "text": "During heavy processing load (Gaming/Rendering)", "next": "check_thermal_behavior" },
+        { "text": "Randomly, even when sitting entirely idle", "next": "sol_intermittent_psu_fault" },
+        { "text": "Every time the power cable is disconnected", "next": "sol_battery_cell_wearout" }
+      ]
+    },
+    "check_thermal_behavior": {
+      "type": "question",
+      "text": "Does the system experience heavy stuttering or performance drops immediately before turning off?",
+      "options": [
+        { "text": "Yes, it stutters then dies", "next": "sol_thermal_throttling" },
+        { "text": "No, it cuts off instantly like pulling a plug", "next": "sol_psu_wattage_limit" }
+      ]
+    },
+    "check_noise_type": {
+      "type": "question",
+      "text": "What type of physical sound or abnormal vibration is originating from the computer chassis?",
+      "options": [
+        { "text": "Loud, high-pitched grinding or clicking noises", "next": "sol_storage_physical_failure" },
+        { "text": "Continuous, aggressive rattling or whirring noises", "next": "sol_cooling_fan_bearing_failure" }
+      ]
+    },
+    "check_laptop_battery": {
+      "type": "question",
+      "text": "What status indicator does the operating system display when the charger is plugged into the wall outlet?",
+      "options": [
+        { "text": "It says 'Plugged in, not charging'", "next": "sol_battery_cell_wearout" },
+        { "text": "The plug feels highly loose and drops charge if moved", "next": "sol_battery_dc_jack_damage" }
+      ]
+    },
+    "check_peripheral_port": {
+      "type": "question",
+      "text": "Which physical connectivity input interface is failing to respond?",
+      "options": [
+        { "text": "An entire bank of USB ports or integrated audio jacks", "next": "sol_port_controller_dead" },
+        { "text": "Pressing individual keys on the keyboard outputs multiple random letters", "next": "sol_keyboard_matrix_short" }
+      ]
+    },
+    "check_network_fault": {
+      "type": "question",
+      "text": "Which network interface layout is dropping its connectivity connection?",
+      "options": [
+        { "text": "Wi-Fi connections drop completely or show driver errors", "next": "sol_network_wlan_card_reseat" },
+        { "text": "The physical Ethernet port link lights remain dead when cabled", "next": "sol_network_ethernet_transformer_dead" }
+      ]
+    },
+    "sol_hardware_bottleneck": {
+      "type": "solution",
+      "diagnosis": "Hardware Component Degradation",
+      "reasoning": "Performance slowness inside Safe Mode indicates an underlying hardware issue, as Safe Mode bypasses resource-heavy third-party drivers and startup applications. This suggests the CPU, RAM, or primary storage drive is physically failing or underperforming.",
+      "confidence": 80,
+      "recommendation": "Execute a dedicated hardware stress test to monitor system stability. Check primary hard drive diagnostic metrics using specialized S.M.A.R.T. monitoring tools to assess overall disk health."
+    },
+    "sol_software_bloat": {
+      "type": "solution",
+      "diagnosis": "Software/Driver Conflict",
+      "reasoning": "Because the system operates at normal speeds within Safe Mode, the underlying performance drops are directly caused by software issues, such as corrupt device drivers, excessive background application load, or malicious background processes active during standard boot cycles.",
+      "confidence": 85,
+      "recommendation": "Review and disable unneeded applications from the startup configuration list. Run a thorough system scan using updated antimalware software and verify that essential system drivers are fully updated."
+    },
+    "sol_thermal_throttling": {
+      "type": "solution",
+      "diagnosis": "CPU Thermal Throttling & Heat Dissipation Failure",
+      "reasoning": "Intense performance stuttering followed immediately by a sudden hardware shutdown is the definitive indicator of thermal overload. The central processing unit reduces its execution speed to shed heat, ultimately triggering an emergency protection shutdown when reaching its maximum junction safety limit (TjMax, typically ~100°C).",
+      "confidence": 95,
+      "recommendation": "Step-by-Step Troubleshooting Guide:\n1. Power down the computer and disconnect the power cord from the wall outlet.\n2. Carefully remove the CPU cooling block or Liquid Cooler (AIO) pump assembly from the motherboard motherboard socket.\n3. Thoroughly clean old, dried thermal compound off both the processor integrated heat spreader (IHS) and the cooler plate using 99% isopropyl alcohol.\n4. Apply a fresh, pea-sized drop of high-quality thermal interface material (TIM) to the center of the processor.\n5. Reinstall the cooling assembly firmly, tightening mounting screws in a balanced cross-pattern sequence to ensure even pressure distribution."
+    },
+    "sol_gpu_init_failure": {
+      "type": "solution",
+      "diagnosis": "Graphics Processing Unit (GPU) POST Initialization Failure",
+      "reasoning": "The standard Motherboard BIOS hardware validation sequence flags a video subsystem exception when emitting a 1-long, 2-short beep pattern, indicating the system cannot establish stable contact with the display controller during power-on testing.",
+      "confidence": 98,
+      "recommendation": "Shut down the power supply, discharge internal residual electrical current by holding the power button for 5 seconds, open the case, and fully unseat the dedicated graphics card. Reinsert the GPU card firmly back into the primary PCIe x16 motherboard slot and verify that all external 6-pin or 8-pin auxiliary power delivery cables are completely locked into place."
+    },
+    "sol_intermittent_psu_fault": {
+      "type": "solution",
+      "diagnosis": "Unstable Voltage Rails / Volatile Power Delivery Failure",
+      "reasoning": "Sudden system restarts or shutdowns occurring while the computer sits entirely idle indicate that the Power Supply Unit (PSU) is failing to maintain its internal 'Power Good' signal logic line, causing the motherboard chipset to trigger an automatic hardware reset.",
+      "confidence": 75,
+      "recommendation": "⚠️ SAFETY WARNING: Do NOT open the internal metal casing of the Power Supply Unit under any circumstances. Internal filtering capacitors retain lethal electrical charges even when disconnected from power outlets.\n\nStep-by-Step Troubleshooting Guide:\n1. Verify stable voltage delivery by testing the computer on a separate wall outlet circuit.\n2. Isolate internal power lines by utilizing a dedicated digital PSU hardware testing tool.\n3. Replace the entire Power Supply Unit immediately if the +12V, +5V, or +3.3V rails deviate beyond standard safety limits (+/- 5%)."
+    },
+    "sol_ram_defect_isolation": {
+      "type": "solution",
+      "diagnosis": "Faulty Random Access Memory (RAM) Module",
+      "reasoning": "Recurring Blue Screen operating system exceptions displaying errors such as MEMORY_MANAGEMENT or PAGE_FAULT_IN_NONPAGED_AREA indicate a structural breakdown of individual physical memory cells, resulting in data corruption inside vital kernel memory address spaces.",
+      "confidence": 90,
+      "recommendation": "Step-by-Step Troubleshooting Guide:\n1. Power off the system, open the chassis, and remove all installed RAM sticks except for a single module placed in the primary channel slot (DIMM_A2).\n2. Boot into a standalone hardware diagnostics utility (such as MemTest86) using a bootable USB drive to test memory sectors sequentially.\n3. Cycle through and test each physical memory stick independently to isolate the defective module.\n4. Remove and replace the specific RAM stick that registers errors during testing."
+    },
+    "sol_ssd_wearout": {
+      "type": "solution",
+      "diagnosis": "Solid State Drive (SSD) NAND Flash Endurance Exhaustion",
+      "reasoning": "Severe, sudden drop-offs in read/write file speeds generally indicate that the solid-state drive controller has exhausted its available spare flash blocks or write endurance cycles, causing the storage system to lock itself into a permanent read-only protection mode to preserve user data.",
+      "confidence": 82,
+      "recommendation": "Install an official vendor storage utility to inspect internal drive SMART logs and check total bytes written (TBW limits). Securely back up all personal data immediately, and replace the storage hardware assembly before complete data access lock occurs."
+    },
+    "sol_power_delivery_failure": {
+      "type": "solution",
+      "diagnosis": "Complete Power Supply Unit (PSU) Failure",
+      "reasoning": "A total lack of system response (no activity indicators, no fan movement) following a power command indicates a fatal breakdown inside the main startup current rail loop, often caused by a blown internal safety fuse or ruptured input stage capacitors.",
+      "confidence": 94,
+      "recommendation": "⚠️ SAFETY WARNING: Power supply components retain high-voltage residual current. Do not attempt to open the enclosure assembly.\n\nVerify power cable continuity, check that the rear physical toggle switch is turned to the ON (I) position, and test the computer using a verified alternative power unit to check for motherboard survival."
+    },
+    "sol_storage_physical_failure": {
+      "type": "solution",
+      "diagnosis": "Mechanical Hard Disk Drive (HDD) Actuator Failure",
+      "reasoning": "Repetitive clicking or grinding noises combined with a 'No Bootable Device Found' bios warning confirms that the mechanical drive read/write head arm has suffered physical displacement, causing structural contact with the protection stop ring or the magnetic platter surface.",
+      "confidence": 96,
+      "recommendation": "Power off the computer immediately to prevent complete grinding destruction of internal data platter layers. Disconnect the drive, substitute a modern Solid State Drive (SSD) module, and restore necessary system configurations from an existing data backup file."
+    },
+    "sol_ram_communication_error": {
+      "type": "solution",
+      "diagnosis": "System Volatile Memory Communication Failure",
+      "reasoning": "Repetitive, continuous short audible beep codes broadcasted by the motherboard firmware indicate a total failure to map or communicate with volatile memory addresses during the first phase of the system POST validation sequence.",
+      "confidence": 92,
+      "recommendation": "Extract all memory sticks from the motherboard slots. Carefully clean the gold edge connection arrays using specialized electrical contact cleaner or a clean rubber pencil eraser, and snap the sticks firmly back into the memory banks until the retention clips lock."
+    },
+    "sol_post_stall_motherboard": {
+      "type": "solution",
+      "diagnosis": "Motherboard Chipset Stall or Corrupted BIOS Firmware State",
+      "reasoning": "Cooling fans spinning continuously without video output or diagnostic codes indicates that the mainboard internal controller logic has locked up before evaluating peripheral sub-components, often due to an invalid configuration or corrupt firmware memory sector.",
+      "confidence": 78,
+      "recommendation": "Perform a complete manual CMOS reset: Disconnect the AC power cord, extract the round CR2032 silver coin battery from the motherboard surface, press the system power button for 10 seconds to drain residual energy, and reinsert the battery cell after 5 minutes to restore default firmware values."
+    },
+    "sol_cpu_socket_dead": {
+      "type": "solution",
+      "diagnosis": "Processor Logical Interface Fault or Damaged Interface Contacts",
+      "reasoning": "A solid red CPU debug LED indicator on the motherboard logic layout indicates that the mainboard firmware cannot establish core electrical continuity with the processor pins during initial system initialization.",
+      "confidence": 88,
+      "recommendation": "Release the CPU retention mechanism and carefully lift the processor out of its socket. Inspect the motherboard pin matrix layout (Intel LGA) or processor pins (AMD PGA) under magnification for physical alignment damage or foreign residue, clean the matrix using a static-free context brush, and re-seat carefully."
+    },
+    "sol_psu_wattage_limit": {
+      "type": "solution",
+      "diagnosis": "Power Supply Current Limit Over-Draw Protection Tripped",
+      "reasoning": "Instant system power cuts occurring under intensive computational operations without prior performance drops indicate that the Power Supply Unit internal Over-Current Protection (OCP) or Over-Power Protection (OPP) circuitry was tripped due to excessive hardware power demands.",
+      "confidence": 90,
+      "recommendation": "Audit total hardware power draws by combining CPU and GPU power usage statistics. Verify that continuous power load demands stay under 80% of your current PSU output rating, and upgrade to a higher-capacity professional grade power system if necessary."
+    },
+    "sol_cooling_fan_bearing_failure": {
+      "type": "solution",
+      "diagnosis": "Mechanical Fluid Bearing Breakdown in System Cooling Fan Assembly",
+      "reasoning": "Aggressive, continuous rattling or grinding noises originating from cooling vents indicate that an active cooling fan spindle has lost internal fluid lubrication or suffered structural frame misalignment, causing the blades to contact surrounding plastic casing.",
+      "confidence": 85,
+      "recommendation": "Open the case to isolate the noisy cooling element. Check that internal power cords are clear of the moving fan blade path, clean out localized dust blockages, and replace the failing modular case or CPU cooling fan assembly."
+    },
+    "sol_battery_cell_wearout": {
+      "type": "solution",
+      "diagnosis": "Laptop Battery Chemical Degradation / Capacity Exhaustion",
+      "reasoning": "Rapid capacity drainage or persistent 'Plugged In, Not Charging' system warnings indicate that internal lithium-ion cells have undergone critical chemical oxidation cycles, permanently reducing ion retention capacity.",
+      "confidence": 93,
+      "recommendation": "⚠️ SAFETY WARNING: If the outer laptop plastic casing or trackpad assembly looks physically warped or swollen, disconnect the charger instantly. Do not crush or pierce the battery, as it presents a severe thermal runaway fire hazard. Remove the battery pack safely and replace it.\n\nGenerate an internal power report using administrative terminal utilities to compare original factory design capacity against current maximum charge levels. Replace the assembly if capacity falls below 60%."
+    },
+    "sol_battery_dc_jack_damage": {
+      "type": "solution",
+      "diagnosis": "Fractured Onboard Direct Current (DC) Input Socket Solder Joints",
+      "reasoning": "Loose charging port inputs that require specific physical alignment angles to establish electrical flow indicate that external cable tension has cracked the internal structural solder points securing the charging jack to the mainboard input lines.",
+      "confidence": 89,
+      "recommendation": "Verify external hardware integrity by testing with an alternative power adapter block. If loose connections persist on the machine side, disassemble the computer chassis to clean structural contacts and resolder the broken input jack connections directly to the mainboard."
+    },
+    "sol_port_controller_dead": {
+      "type": "solution",
+      "diagnosis": "Integrated Input/Output Controller Failure or Blown Protection Diode",
+      "reasoning": "Simultaneous, total hardware failure across a specific group of external connectivity ports indicates an electrical surge shorted out the inline protection diodes or damaged the localized I/O hub chip managing those data lines.",
+      "confidence": 84,
+      "recommendation": "Check for controller errors within the operating system Device Manager utility. If the port banks remain completely unresponsive across both the operating system and low-level BIOS layers, deploy an add-in PCIe expansion interface card to restore physical connectivity lines."
+    },
+    "sol_keyboard_matrix_short": {
+      "type": "solution",
+      "diagnosis": "Corroded Keyboard Scanning Membrane Matrix Circuit",
+      "reasoning": "Erratic key execution or instances where pressing a single button inputs a string of random characters indicates that liquid ingress or moisture residue has compromised the internal contact membrane layer, creating an unwanted electrical short across the scanning matrix.",
+      "confidence": 86,
+      "recommendation": "Connect a separate external USB desktop keyboard module to the computer. If external input text registers cleanly, the integrated laptop key matrix is short-circuited and requires a complete replacement module assembly."
+    },
+    "sol_network_wlan_card_reseat": {
+      "type": "solution",
+      "diagnosis": "PCIe Mini Wi-Fi Transceiver Displacement or Micro-Coaxial Antenna Drift",
+      "reasoning": "Unstable network drops or instances where wireless adapters vanish from the hardware list indicate physical connection drift out of the M.2/PCIe slot, or micro-coaxial antenna leads loosening from the main card terminals due to regular vibration.",
+      "confidence": 87,
+      "recommendation": "Access the internal wireless card expansion slot panel underneath the computer chassis. Remove and cleanly reseat the M.2 networking card chip, and verify that the two circular gold micro-coaxial antenna leads are snapped firmly onto the Main and Auxiliary card terminals."
+    },
+    "sol_network_ethernet_transformer_dead": {
+      "type": "solution",
+      "diagnosis": "Overloaded Onboard LAN Port Magnetic Transformer Block",
+      "reasoning": "Unlit network link indicator lights when using verified, functional network cables confirm that the integrated isolation transformer block inside the RJ-45 jack assembly has failed, usually due to line voltage transients from a network surge.",
+      "confidence": 91,
+      "recommendation": "Examine the inner cavity pins of the physical LAN socket to ensure they are straight and aligned. If the physical link connection remains dead, deploy a dedicated USB-to-LAN adapter converter to bypass the damaged onboard logic hardware."
+    }
+  }
+}

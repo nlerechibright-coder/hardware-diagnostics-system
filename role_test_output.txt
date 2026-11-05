@@ -1,0 +1,464 @@
+Creating test database for alias 'default'...
+System.Management.Automation.RemoteException
+......[KB VALIDATION FAILURE] Solution node ID 'AUD-001' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'AUD-001' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'AUD-002' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'AUD-002' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'AUD-003' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'AUD-003' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'AUD-004' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'AUD-004' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'AUD-005' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'AUD-005' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'BIOS-001' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'BIOS-001' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'BIOS-002' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'BIOS-002' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'BIOS-003' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'BIOS-003' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'BIOS-004' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'BIOS-004' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'BIOS-005' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'BIOS-005' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'BOOT-001' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'BOOT-001' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'BOOT-002' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'BOOT-002' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'BOOT-003' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'BOOT-003' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'BOOT-004' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'BOOT-004' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'BOOT-005' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'BOOT-005' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'CPU-002' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'CPU-002' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'CPU-003' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'CPU-003' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'CPU-004' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'CPU-004' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'CPU-005' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'CPU-005' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'DISP-001' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'DISP-001' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'DISP-002' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'DISP-002' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'DISP-003' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'DISP-003' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'DISP-004' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'DISP-004' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'DISP-005' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'DISP-005' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'GPU-001' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'GPU-001' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'GPU-002' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'GPU-002' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'GPU-003' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'GPU-003' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'GPU-004' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'GPU-004' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'GPU-005' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'GPU-005' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'GEN-001' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'GEN-001' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'GEN-002' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'GEN-002' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'GEN-003' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'GEN-003' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'GEN-004' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'GEN-004' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'GEN-005' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'GEN-005' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'LAP-001' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'LAP-001' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'LAP-002' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'LAP-002' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'LAP-003' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'LAP-003' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'LAP-004' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'LAP-004' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'LAP-005' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'LAP-005' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'MB-001' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'MB-001' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'MB-002' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'MB-002' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'MB-003' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'MB-003' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'MB-004' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'MB-004' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'MB-005' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'MB-005' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'NET-001' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'NET-001' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'NET-002' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'NET-002' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'NET-003' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'NET-003' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'NET-004' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'NET-004' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'NET-005' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'NET-005' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'PSU-001' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'PSU-001' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'PSU-002' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'PSU-002' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'PSU-003' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'PSU-003' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'PSU-004' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'PSU-004' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'PSU-005' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'PSU-005' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'PER-001' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'PER-001' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'PER-002' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'PER-002' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'PER-003' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'PER-003' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'PER-004' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'PER-004' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'PER-005' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'PER-005' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'RAM-001' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'RAM-001' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'RAM-002' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'RAM-002' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'RAM-003' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'RAM-003' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'RAM-004' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'RAM-004' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'RAM-005' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'RAM-005' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'STO-001' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'STO-001' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'STO-002' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'STO-002' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'STO-003' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'STO-003' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'STO-004' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'STO-004' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'STO-005' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'STO-005' requires a populated recommendation field.
+Inference Engine Warning: Live DB contains 138 validation conflicts.
+.[KB VALIDATION FAILURE] Solution node ID 'AUD-001' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'AUD-001' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'AUD-002' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'AUD-002' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'AUD-003' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'AUD-003' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'AUD-004' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'AUD-004' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'AUD-005' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'AUD-005' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'BIOS-001' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'BIOS-001' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'BIOS-002' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'BIOS-002' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'BIOS-003' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'BIOS-003' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'BIOS-004' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'BIOS-004' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'BIOS-005' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'BIOS-005' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'BOOT-001' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'BOOT-001' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'BOOT-002' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'BOOT-002' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'BOOT-003' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'BOOT-003' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'BOOT-004' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'BOOT-004' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'BOOT-005' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'BOOT-005' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'CPU-002' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'CPU-002' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'CPU-003' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'CPU-003' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'CPU-004' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'CPU-004' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'CPU-005' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'CPU-005' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'DISP-001' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'DISP-001' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'DISP-002' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'DISP-002' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'DISP-003' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'DISP-003' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'DISP-004' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'DISP-004' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'DISP-005' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'DISP-005' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'GPU-001' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'GPU-001' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'GPU-002' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'GPU-002' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'GPU-003' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'GPU-003' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'GPU-004' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'GPU-004' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'GPU-005' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'GPU-005' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'GEN-001' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'GEN-001' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'GEN-002' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'GEN-002' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'GEN-003' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'GEN-003' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'GEN-004' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'GEN-004' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'GEN-005' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'GEN-005' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'LAP-001' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'LAP-001' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'LAP-002' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'LAP-002' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'LAP-003' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'LAP-003' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'LAP-004' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'LAP-004' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'LAP-005' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'LAP-005' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'MB-001' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'MB-001' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'MB-002' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'MB-002' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'MB-003' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'MB-003' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'MB-004' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'MB-004' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'MB-005' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'MB-005' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'NET-001' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'NET-001' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'NET-002' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'NET-002' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'NET-003' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'NET-003' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'NET-004' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'NET-004' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'NET-005' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'NET-005' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'PSU-001' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'PSU-001' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'PSU-002' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'PSU-002' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'PSU-003' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'PSU-003' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'PSU-004' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'PSU-004' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'PSU-005' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'PSU-005' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'PER-001' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'PER-001' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'PER-002' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'PER-002' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'PER-003' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'PER-003' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'PER-004' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'PER-004' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'PER-005' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'PER-005' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'RAM-001' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'RAM-001' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'RAM-002' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'RAM-002' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'RAM-003' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'RAM-003' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'RAM-004' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'RAM-004' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'RAM-005' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'RAM-005' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'STO-001' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'STO-001' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'STO-002' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'STO-002' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'STO-003' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'STO-003' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'STO-004' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'STO-004' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'STO-005' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'STO-005' requires a populated recommendation field.
+Inference Engine Warning: Live DB contains 138 validation conflicts.
+.[KB VALIDATION FAILURE] Solution node ID 'AUD-001' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'AUD-001' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'AUD-002' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'AUD-002' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'AUD-003' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'AUD-003' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'AUD-004' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'AUD-004' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'AUD-005' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'AUD-005' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'BIOS-001' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'BIOS-001' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'BIOS-002' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'BIOS-002' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'BIOS-003' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'BIOS-003' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'BIOS-004' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'BIOS-004' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'BIOS-005' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'BIOS-005' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'BOOT-001' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'BOOT-001' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'BOOT-002' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'BOOT-002' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'BOOT-003' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'BOOT-003' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'BOOT-004' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'BOOT-004' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'BOOT-005' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'BOOT-005' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'CPU-002' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'CPU-002' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'CPU-003' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'CPU-003' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'CPU-004' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'CPU-004' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'CPU-005' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'CPU-005' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'DISP-001' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'DISP-001' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'DISP-002' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'DISP-002' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'DISP-003' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'DISP-003' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'DISP-004' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'DISP-004' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'DISP-005' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'DISP-005' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'GPU-001' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'GPU-001' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'GPU-002' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'GPU-002' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'GPU-003' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'GPU-003' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'GPU-004' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'GPU-004' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'GPU-005' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'GPU-005' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'GEN-001' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'GEN-001' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'GEN-002' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'GEN-002' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'GEN-003' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'GEN-003' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'GEN-004' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'GEN-004' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'GEN-005' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'GEN-005' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'LAP-001' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'LAP-001' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'LAP-002' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'LAP-002' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'LAP-003' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'LAP-003' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'LAP-004' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'LAP-004' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'LAP-005' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'LAP-005' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'MB-001' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'MB-001' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'MB-002' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'MB-002' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'MB-003' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'MB-003' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'MB-004' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'MB-004' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'MB-005' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'MB-005' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'NET-001' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'NET-001' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'NET-002' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'NET-002' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'NET-003' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'NET-003' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'NET-004' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'NET-004' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'NET-005' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'NET-005' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'PSU-001' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'PSU-001' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'PSU-002' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'PSU-002' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'PSU-003' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'PSU-003' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'PSU-004' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'PSU-004' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'PSU-005' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'PSU-005' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'PER-001' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'PER-001' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'PER-002' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'PER-002' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'PER-003' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'PER-003' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'PER-004' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'PER-004' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'PER-005' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'PER-005' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'RAM-001' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'RAM-001' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'RAM-002' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'RAM-002' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'RAM-003' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'RAM-003' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'RAM-004' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'RAM-004' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'RAM-005' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'RAM-005' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'STO-001' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'STO-001' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'STO-002' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'STO-002' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'STO-003' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'STO-003' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'STO-004' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'STO-004' requires a populated recommendation field.
+[KB VALIDATION FAILURE] Solution node ID 'STO-005' requires a populated reasoning field.
+[KB VALIDATION FAILURE] Solution node ID 'STO-005' requires a populated recommendation field.
+Inference Engine Warning: Live DB contains 138 validation conflicts.
+.
+----------------------------------------------------------------------
+Ran 9 tests in 14.438s
+System.Management.Automation.RemoteException
+OK
+Destroying test database for alias 'default'...
+System.Management.Automation.RemoteException
+Found 9 test(s).
+System check identified no issues (0 silenced).
+Flushing existing data...
+   Done.
+Seeding knowledge base...
+  CPU...
+   5 nodes
+  RAM...
+   5 nodes
+  Storage...
+   5 nodes
+  GPU...
+   5 nodes
+  PSU...
+   5 nodes
+  Motherboard...
+   5 nodes
+  Boot...
+   5 nodes
+  BIOS...
+   5 nodes
+  Display...
+   5 nodes
+  Network...
+   5 nodes
+  Peripherals...
+   5 nodes
+  Audio...
+   5 nodes
+  Laptop...
+   5 nodes
+  General...
+   5 nodes
+
+Knowledge base seeded: 70 nodes
+   Categories: CPU, RAM, Storage, GPU, PSU, Motherboard, Boot, BIOS, Display, Network, Peripherals, Audio, Laptop, General
+Rebuilding search index...
+   Done. 6897 search terms indexed.

@@ -1,0 +1,59 @@
+﻿{% extends 'manager/base.html' %}
+{% block title %}{% if rule %}Edit Rule{% else %}Create Rule{% endif %}{% endblock %}
+{% block content %}
+<div class="table-container" style="max-width: 800px;">
+    <h2>{% if rule %}Edit Diagnostic Rule: {{ rule.node_id }}{% else %}Create New Diagnostic Rule{% endif %}</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <div class="form-group">
+            <label>Node ID (Unique, e.g., CPU-Q1 or GPU-S1)</label>
+            <input type="text" name="node_id" value="{{ rule.node_id|default:'' }}" {% if rule %}readonly style="background: #eee;"{% endif %} required>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+            <div class="form-group">
+                <label>Category</label>
+                <input type="text" name="category" value="{{ rule.category|default:'' }}" required>
+            </div>
+            <div class="form-group">
+                <label>Node Type</label>
+                <select name="node_type">
+                    <option value="question" {% if rule.node_type == 'question' %}selected{% endif %}>Question</option>
+                    <option value="solution" {% if rule.node_type == 'solution' or not rule %}selected{% endif %}>Solution</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Title</label>
+            <input type="text" name="title" value="{{ rule.title|default:'' }}" required>
+        </div>
+        <div class="form-group">
+            <label>Content (Question text or full diagnostic article)</label>
+            <textarea name="content" rows="5">{{ rule.content|default:'' }}</textarea>
+        </div>
+        <div class="form-group">
+            <label>Recommendation</label>
+            <textarea name="recommendation" rows="3">{{ rule.recommendation|default:'' }}</textarea>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+            <div class="form-group">
+                <label>Severity</label>
+                <select name="severity">
+                    <option value="LOW" {% if rule.severity == 'LOW' %}selected{% endif %}>Low</option>
+                    <option value="MEDIUM" {% if rule.severity == 'MEDIUM' or not rule %}selected{% endif %}>Medium</option>
+                    <option value="HIGH" {% if rule.severity == 'HIGH' %}selected{% endif %}>High</option>
+                    <option value="CRITICAL" {% if rule.severity == 'CRITICAL' %}selected{% endif %}>Critical</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Search Keywords (Comma-separated)</label>
+                <input type="text" name="search_keywords" value="{{ rule.search_keywords|default:'' }}">
+            </div>
+        </div>
+        <div class="form-group">
+            <label><input type="checkbox" name="is_active" {% if rule.is_active or not rule %}checked{% endif %}> Is Active</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Save Rule</button>
+        <a href="{% url 'manager_knowledge_list' %}" class="btn" style="background: #95a5a6; color: #fff;">Cancel</a>
+    </form>
+</div>
+{% endblock %}

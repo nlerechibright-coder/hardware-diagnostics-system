@@ -1,0 +1,37 @@
+﻿{% extends 'manager/base.html' %}
+{% block title %}{% if case %}Edit User Case{% else %}Create User Case{% endif %}{% endblock %}
+{% block content %}
+<div class="table-container" style="max-width: 800px;">
+    <h2>{% if case %}Edit Case: {{ case.case_id }}{% else %}Create New User Case{% endif %}</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <div class="form-group">
+            <label>Case ID (Unique, e.g., user-root)</label>
+            <input type="text" name="case_id" value="{{ case.case_id|default:'' }}" {% if case %}readonly style="background: #eee;"{% endif %} required>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+            <div class="form-group"><label>Category</label><input type="text" name="category" value="{{ case.category|default:'' }}" required></div>
+            <div class="form-group"><label>Title</label><input type="text" name="title" value="{{ case.title|default:'' }}" required></div>
+        </div>
+        <div class="form-group"><label>Question</label><textarea name="question" rows="3">{{ case.question|default:'' }}</textarea></div>
+        <div class="form-group"><label>Diagnosis</label><textarea name="diagnosis" rows="3">{{ case.diagnosis|default:'' }}</textarea></div>
+        <div class="form-group"><label>Explanation</label><textarea name="explanation" rows="3">{{ case.explanation|default:'' }}</textarea></div>
+        <div class="form-group"><label>Procedure</label><textarea name="procedure" rows="3">{{ case.procedure|default:'' }}</textarea></div>
+        <div class="form-group"><label>Warning</label><textarea name="warning" rows="2">{{ case.warning|default:'' }}</textarea></div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+            <div class="form-group"><label>Option Yes Text</label><input type="text" name="option_yes_text" value="{{ case.option_yes_text|default:'Yes' }}"></div>
+            <div class="form-group"><label>Option No Text</label><input type="text" name="option_no_text" value="{{ case.option_no_text|default:'No' }}"></div>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+            <div class="form-group"><label>Next Yes (Case ID)</label><input type="text" name="next_yes" value="{{ case.next_yes|default:'' }}"></div>
+            <div class="form-group"><label>Next No (Case ID)</label><input type="text" name="next_no" value="{{ case.next_no|default:'' }}"></div>
+        </div>
+        <div class="form-group">
+            <label><input type="checkbox" name="is_root" {% if case.is_root %}checked{% endif %}> Is Root Node</label>
+            <label style="margin-left: 20px;"><input type="checkbox" name="is_solution" {% if case.is_solution %}checked{% endif %}> Is Solution Node</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Save Case</button>
+        <a href="{% url 'manager_user_cases' %}" class="btn" style="background: #95a5a6; color: #fff;">Cancel</a>
+    </form>
+</div>
+{% endblock %}

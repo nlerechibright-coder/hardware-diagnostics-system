@@ -1,0 +1,34 @@
+﻿{% extends 'manager/base.html' %}
+{% block title %}Management Overview{% endblock %}
+{% block content %}
+<div class="card-grid">
+    <div class="card"><h3>{{ total_rules }}</h3><p>Total Knowledge Rules</p></div>
+    <div class="card"><h3>{{ total_questions }}</h3><p>Diagnostic Questions</p></div>
+    <div class="card"><h3>{{ total_solutions }}</h3><p>Solution Nodes</p></div>
+    <div class="card"><h3>{{ total_user_cases }}</h3><p>Normal User Cases</p></div>
+    <div class="card"><h3>{{ technicians }}</h3><p>Registered Technicians</p></div>
+    <div class="card"><h3>{{ normal_users }}</h3><p>Registered Normal Users</p></div>
+</div>
+
+<div class="table-container">
+    <h3 style="margin-top: 0;">Recent Diagnostic Sessions</h3>
+    <table>
+        <thead>
+            <tr><th>Session ID</th><th>User</th><th>Subsystem</th><th>Status</th><th>Started At</th></tr>
+        </thead>
+        <tbody>
+            {% for session in recent_sessions %}
+            <tr>
+                <td>{{ session.session_id }}</td>
+                <td>{{ session.user.username|default:"Anonymous" }}</td>
+                <td>{{ session.get_diagnostic_subsystem_display }}</td>
+                <td><span style="padding: 4px 8px; border-radius: 12px; background: {% if session.status == 'completed' %}#d4edda{% elif session.status == 'active' %}#cce5ff{% else %}#f8d7da{% endif %}; font-size: 0.8rem;">{{ session.status }}</span></td>
+                <td>{{ session.started_at|date:"M d, Y H:i" }}</td>
+            </tr>
+            {% empty %}
+            <tr><td colspan="5" style="text-align: center;">No recent sessions.</td></tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
