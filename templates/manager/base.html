@@ -33,6 +33,60 @@
         .message.success { background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
         .message.error { background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
     </style>
+<style>
+    /* MOBILE RESPONSIVENESS FIX */
+    @media (max-width: 768px) {
+        /* Stack layout vertically on mobile */
+        body { flex-direction: column; }
+        
+        /* Make sidebar a compact top navigation */
+        .sidebar { 
+            width: 100%; 
+            flex-direction: row; 
+            overflow-x: auto; 
+            padding: 10px; 
+            white-space: nowrap;
+        }
+        .sidebar h2 { display: none; } /* Hide title on mobile to save space */
+        .sidebar a { 
+            padding: 10px 15px; 
+            border-left: none; 
+            border-bottom: 3px solid transparent; 
+            font-size: 0.9rem;
+        }
+        .sidebar a:hover, .sidebar a.active { 
+            border-left: none; 
+            border-bottom: 3px solid #3498db; 
+        }
+        
+        /* Adjust main content padding */
+        .main-content { padding: 15px; }
+        .header { flex-direction: column; align-items: flex-start; gap: 10px; }
+        
+        /* Stack stat cards in a single column */
+        .card-grid { grid-template-columns: 1fr; gap: 15px; }
+        
+        /* Make tables horizontally scrollable */
+        .table-container { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+        table { min-width: 600px; } /* Forces scroll on small screens */
+        
+        /* Make buttons and forms touch-friendly */
+        .btn { width: 100%; margin-bottom: 10px; padding: 12px; font-size: 1rem; }
+        .form-group input, .form-group select, .form-group textarea { 
+            font-size: 16px; /* Prevents iOS zoom on focus */
+            padding: 12px; 
+        }
+        
+        /* Diagnostic Options: Stack vertically with clear tap targets */
+        .diagnostic-options { display: flex; flex-direction: column; gap: 10px; }
+        .diagnostic-option { 
+            width: 100%; 
+            text-align: left; 
+            padding: 15px; 
+            font-size: 1rem;
+        }
+    }
+</style>
 </head>
 <body>
     <div class="sidebar">
@@ -63,3 +117,4 @@
     </div>
 </body>
 </html>
+
