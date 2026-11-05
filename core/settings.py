@@ -1,17 +1,14 @@
-﻿import dj_database_url
-import os
-"""
-Django settings for Hardware Diagnostic System.
-Finalized for Phase 1 - Menny-wizzy of Barcelona
-"""
-
-import os
+﻿import os
+import dj_database_url
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = 'django-insecure-t#(a7y@rkq+pe3yt4j*_6e%x8%p%6jx^rxs=c1)y0*=^lxw8!c'
+SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-t#(a7y@rkq+pe3yt4j*_6e%x8%p%6jx^rxs=c1)y0*=^lxw8!c')
+
+# DEBUG is True by default for local, but we can force it via environment variable
 DEBUG = os.environ.get('DJANGO_DEBUG', 'True').lower() in ['true', '1', 'yes']
+
 ALLOWED_HOSTS = os.environ.get('DJANGO_ALLOWED_HOSTS', '.onrender.com,127.0.0.1,localhost').split(',')
 
 INSTALLED_APPS = [
@@ -61,11 +58,13 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'core.wsgi.application'
 
+# CORRECTED: Dynamically uses Neon in production, SQLite locally
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    'default': dj_database_url.config(
+        default=f"sqlite:///{BASE_DIR / 'db.sqlite3'}",
+        conn_max_age=600,
+        ssl_require=os.environ.get('DATABASE_URL', '').startswith('postgresql')
+    )
 }
 
 REST_FRAMEWORK = {
@@ -88,7 +87,6 @@ USE_I18N = True
 USE_TZ = True
 
 STATIC_URL = 'static/'
-# This logic prevents the "directory does not exist" warning
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')] if os.path.exists(os.path.join(BASE_DIR, 'static')) else []
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
