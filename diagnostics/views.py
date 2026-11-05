@@ -22,7 +22,7 @@ def get_diagnostic_engine_for_user(user):
 
 
 def get_start_node_for_user(user):
-    return 'user-root' if not is_technician(user) else 'CPU-Q1'
+    return 'user-root' if not is_technician(user) else 'ROOT-1'
 
 
 @login_required
@@ -451,6 +451,7 @@ def manager_user_case_delete(request, case_id):
     case.delete()
     messages.success(request, 'User case deleted successfully.')
     return redirect('manager_user_cases')
+
 
 
 
